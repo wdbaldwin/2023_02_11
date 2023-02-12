@@ -1,0 +1,275 @@
+steps:
+  DIM_SALES_TERRITORY1-124:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      dependencies: []
+      deployEnabled: true
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1482
+              stepCounter: "124"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: DIM_SALES_TERRITORY1_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 1483
+              stepCounter: "124"
+            dataType: VARCHAR(2000)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TERRITORY_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1474
+                    stepCounter: "123"
+                transform: ""
+          - columnReference:
+              columnCounter: 1484
+              stepCounter: "124"
+            dataType: VARCHAR(2000)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: COUNTY_REGION_CODE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1475
+                    stepCounter: "123"
+                transform: ""
+          - columnReference:
+              columnCounter: 1485
+              stepCounter: "124"
+            dataType: VARCHAR(2000)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TERRITORY_NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1476
+                    stepCounter: "123"
+                transform: ""
+          - columnReference:
+              columnCounter: 1486
+              stepCounter: "124"
+            dataType: VARCHAR(2000)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TERRITORY_GROUP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1477
+                    stepCounter: "123"
+                transform: ""
+          - columnReference:
+              columnCounter: 1487
+              stepCounter: "124"
+            dataType: VARCHAR(2000)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: QUOTA2020
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1478
+                    stepCounter: "123"
+                transform: ""
+          - columnReference:
+              columnCounter: 1488
+              stepCounter: "124"
+            dataType: VARCHAR(2000)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: QUOTA2021
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1479
+                    stepCounter: "123"
+                transform: ""
+          - columnReference:
+              columnCounter: 1489
+              stepCounter: "124"
+            dataType: VARCHAR(2000)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: QUOTA2022
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1480
+                    stepCounter: "123"
+                transform: ""
+          - columnReference:
+              columnCounter: 1490
+              stepCounter: "124"
+            dataType: VARCHAR(2000)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: QUOTA2023
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1481
+                    stepCounter: "123"
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1491
+              stepCounter: "124"
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemVersion: true
+            name: SYSTEM_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1492
+              stepCounter: "124"
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCurrentFlag: true
+            name: SYSTEM_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1493
+              stepCounter: "124"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1494
+              stepCounter: "124"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1495
+              stepCounter: "124"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1496
+              stepCounter: "124"
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: TARGET
+                nodeName: STG_SALES_TERRITORY1
+            join:
+              joinCondition: FROM {{ ref('TARGET', 'STG_SALES_TERRITORY1') }} "STG_SALES_TERRITORY1"
+            name: DIM_SALES_TERRITORY1
+            noLinkRefs: []
+      name: DIM_SALES_TERRITORY1
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: "124"
